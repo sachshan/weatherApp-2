@@ -1,0 +1,13 @@
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  color: purple;
+  margin: 40px; }
+
+p{
+  color: aqua;
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  padding: 50px; }
