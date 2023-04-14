@@ -3,7 +3,7 @@ const lSearch = document.querySelector('input');
 const m1 = document.querySelector('#m1');
 const m2 = document.querySelector('#m2');
 
-m1.innerText = "Hey this is the frontend js"
+
 
 
 wform.addEventListener('submit',(event)=>{
@@ -20,7 +20,8 @@ wform.addEventListener('submit',(event)=>{
         }
         else
         {
-            console.log(data.location + " " + data.weather_description);
+            m1.innerText = data.location
+            m2.innerText = "The weather is "+ data.weather_description+", and feels like "+ data.feelslike+" ,with the temperature of "+data.temperature+".";
         }
     })
 })
