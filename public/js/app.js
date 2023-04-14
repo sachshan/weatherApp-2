@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/weather?address=Boston').then((response)=>{
+fetch('/weather?address=Boston').then((response)=>{
     response.json().then((data)=>{
 
         if(data.error)
@@ -18,9 +18,9 @@ const lSearch = document.querySelector('input');
 wform.addEventListener('submit',(event)=>{
 
     event.preventDefault();
-    console.log('http://localhost:3000/weather?address=+'+lSearch.value);
+    console.log('/weather?address=+'+lSearch.value);
     
-    fetch('http://localhost:3000/weather?address=+'+ lSearch.value).then((response)=>{
+    fetch('/weather?address=+'+ lSearch.value).then((response)=>{
     response.json().then((data)=>{
 
         if(data.error)
